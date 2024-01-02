@@ -105,6 +105,14 @@
     cross-fetch "^3.1.5"
     jsontokens "^4.0.1"
 
+"@stacks/common@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@stacks/common/-/common-6.10.0.tgz#f071ff0c69620f60ec623020df0db9c9fbf016b4"
+  integrity sha512-6x5Z7AKd9/kj3+DYE9xIDIkFLHihBH614i2wqrZIjN02WxVo063hWSjIlUxlx8P4gl6olVzlOy5LzhLJD9OP0A==
+  dependencies:
+    "@types/bn.js" "^5.1.0"
+    "@types/node" "^18.0.4"
+
 "@stacks/common@^6.5.2":
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/@stacks/common/-/common-6.5.2.tgz#8e2e865856ebcdb082d5c98383f6df7351147935"
@@ -134,6 +142,14 @@
   integrity sha512-+XNneecXCitis7OGDoCMqfKp0j4SICaij6XN9JTq+pAoaCbuJqLRZrrVP/ApkWbotTzeVZIbrZPqMLqkdgGTrg==
   dependencies:
     "@stacks/common" "^6.5.2"
+    cross-fetch "^3.1.5"
+
+"@stacks/network@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@stacks/network/-/network-6.10.0.tgz#bedc5c9ad97ee4f1431c59f155a7e6e3f32a49cd"
+  integrity sha512-mbiZ8nlsyy77ndmBdaqhHXii22IFdK4ThRcOQs9j/O00DkAr04jCM4GV5Q+VLUnZ9OBoJq7yOV7Pf6jglh+0hw==
+  dependencies:
+    "@stacks/common" "^6.10.0"
     cross-fetch "^3.1.5"
 
 "@stacks/profile@^6.5.2":
@@ -178,7 +194,19 @@
     base64-js "^1.5.1"
     jsontokens "^4.0.1"
 
-"@stacks/transactions@6.5.2", "@stacks/transactions@^6.5.2":
+"@stacks/transactions@6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@stacks/transactions/-/transactions-6.10.0.tgz#d8c99f8a9c7dab87715332e728d42b4004e253e6"
+  integrity sha512-6zeCV3nym6Bu42KCslBSR3Y+otvjRoSPQNbu0hOFqFOxCXT7ZWW2ZWkdkDjHUmbxpVsCb38l+pbxIFWWrPVC9w==
+  dependencies:
+    "@noble/hashes" "1.1.5"
+    "@noble/secp256k1" "1.7.1"
+    "@stacks/common" "^6.10.0"
+    "@stacks/network" "^6.10.0"
+    c32check "^2.0.0"
+    lodash.clonedeep "^4.5.0"
+
+"@stacks/transactions@^6.5.2":
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/@stacks/transactions/-/transactions-6.5.2.tgz#6b6507968d11f23720dcd1e1e23c51d1b1580fe7"
   integrity sha512-xL4XF4xSFFJ+VMzeahBenGdg1T+y0Q0fSNA09jz7knTnnXvdAzzC+RP59xzuIjrAY/IWYO3X1sf0MGm9IIhYOg==
