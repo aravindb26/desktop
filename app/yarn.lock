@@ -93,17 +93,25 @@
     "@noble/hashes" "~1.1.1"
     "@scure/base" "~1.1.0"
 
-"@stacks/auth@^6.5.2":
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/@stacks/auth/-/auth-6.5.2.tgz#5e9073f4ac8ae91aa5c4d08ad5982641245c73aa"
-  integrity sha512-kIdfpoPAIyJ/WBvJKaBLW/87A2ew8dKIUnv4T1qeZfcJwWc6qyR3bcI5gCMvYlJ460SVi1ajSnyANPWU3qIGaQ==
+"@stacks/auth@^6.10.0", "@stacks/auth@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@stacks/auth/-/auth-6.11.0.tgz#d7d2f57813c8d81b3a1baaf7897dbe8888b1b4b4"
+  integrity sha512-I4oWBoTu57lg3dL+PC/tpRdAU/1ETYtMw4g7f76a8tauiFDDvk4Dve5MNl5fknrH+rhtvqkwLILc3UBFIMfu0Q==
   dependencies:
-    "@stacks/common" "^6.5.2"
-    "@stacks/encryption" "^6.5.2"
-    "@stacks/network" "^6.5.2"
-    "@stacks/profile" "^6.5.2"
+    "@stacks/common" "^6.10.0"
+    "@stacks/encryption" "^6.11.0"
+    "@stacks/network" "^6.10.0"
+    "@stacks/profile" "^6.11.0"
     cross-fetch "^3.1.5"
     jsontokens "^4.0.1"
+
+"@stacks/common@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@stacks/common/-/common-6.10.0.tgz#f071ff0c69620f60ec623020df0db9c9fbf016b4"
+  integrity sha512-6x5Z7AKd9/kj3+DYE9xIDIkFLHihBH614i2wqrZIjN02WxVo063hWSjIlUxlx8P4gl6olVzlOy5LzhLJD9OP0A==
+  dependencies:
+    "@types/bn.js" "^5.1.0"
+    "@types/node" "^18.0.4"
 
 "@stacks/common@^6.5.2":
   version "6.5.2"
@@ -112,6 +120,21 @@
   dependencies:
     "@types/bn.js" "^5.1.0"
     "@types/node" "^18.0.4"
+
+"@stacks/encryption@^6.10.0", "@stacks/encryption@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@stacks/encryption/-/encryption-6.11.0.tgz#de2ecf5a44232424e184f4bbf299bd93f0842d84"
+  integrity sha512-VfBkrwmCRppCasJo+R/hWfC7vgS6GmfPyoTeDsoYlfRRXz/auFbEdRaaruFPtAda/1nKdDOZ9UZEMOp5AIw0IQ==
+  dependencies:
+    "@noble/hashes" "1.1.5"
+    "@noble/secp256k1" "1.7.1"
+    "@scure/bip39" "1.1.0"
+    "@stacks/common" "^6.10.0"
+    "@types/node" "^18.0.4"
+    base64-js "^1.5.1"
+    bs58 "^5.0.0"
+    ripemd160-min "^0.0.6"
+    varuint-bitcoin "^1.1.2"
 
 "@stacks/encryption@^6.5.2":
   version "6.5.2"
@@ -136,14 +159,22 @@
     "@stacks/common" "^6.5.2"
     cross-fetch "^3.1.5"
 
-"@stacks/profile@^6.5.2":
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/@stacks/profile/-/profile-6.5.2.tgz#1400aa379ee9cef89f6c8728accdb9c08e61b54a"
-  integrity sha512-OtVHmqyMK/Iumo/sXHswqEZIIj/ZBgKyR5Wc609rcC1ZPpN60kXmLLzMq9cCKYZWxFLM1utjYskkGL0FcU5wQw==
+"@stacks/network@^6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@stacks/network/-/network-6.10.0.tgz#bedc5c9ad97ee4f1431c59f155a7e6e3f32a49cd"
+  integrity sha512-mbiZ8nlsyy77ndmBdaqhHXii22IFdK4ThRcOQs9j/O00DkAr04jCM4GV5Q+VLUnZ9OBoJq7yOV7Pf6jglh+0hw==
   dependencies:
-    "@stacks/common" "^6.5.2"
-    "@stacks/network" "^6.5.2"
-    "@stacks/transactions" "^6.5.2"
+    "@stacks/common" "^6.10.0"
+    cross-fetch "^3.1.5"
+
+"@stacks/profile@^6.10.0", "@stacks/profile@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@stacks/profile/-/profile-6.11.0.tgz#1e1033331c6caf1a6056d22b9f12cd399ca52c04"
+  integrity sha512-GXheCbu2g5X5qCAj1rSWCeZEbzHTW/IhPMOInPA15FH4VUBu09AonWtDs9w+sPUhbbiG9Zx4A0TLDaO52hHpBg==
+  dependencies:
+    "@stacks/common" "^6.10.0"
+    "@stacks/network" "^6.10.0"
+    "@stacks/transactions" "^6.11.0"
     jsontokens "^4.0.1"
     schema-inspector "^2.0.2"
     zone-file "^2.0.0-beta.3"
@@ -166,15 +197,15 @@
   resolved "https://registry.yarnpkg.com/@stacks/stacks-blockchain-api-types/-/stacks-blockchain-api-types-0.61.0.tgz#f8bc61ad7781fdc0d9e9db711580db984f164e93"
   integrity sha512-yPOfTUboo5eA9BZL/hqMcM71GstrFs9YWzOrJFPeP4cOO1wgYvAcckgBRbgiE3NqeX0A7SLZLDAXLZbATuRq9w==
 
-"@stacks/storage@^6.5.2":
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/@stacks/storage/-/storage-6.5.2.tgz#67740af55bf26f49eaa50116bc4124d7b4bd402a"
-  integrity sha512-D8gq+sNSyO9+qc/HGjg8LCQoM9eWNvu3bhkLSygZnLLaxxdXOB9e9pkIXCDK30FNmKB0fhkRC/tk/AsKFcOULw==
+"@stacks/storage@^6.10.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@stacks/storage/-/storage-6.11.0.tgz#83ec53883ceed05de55fcde49984c5d3651c6b99"
+  integrity sha512-tZ39pntKzNaJQiDmG32AMU5HKZ3kuU4jd0t9/9A1SHVfqXDWxO1Kuu81MZk4ujcXfJM5zZtrMAMOj2Tgc988GA==
   dependencies:
-    "@stacks/auth" "^6.5.2"
-    "@stacks/common" "^6.5.2"
-    "@stacks/encryption" "^6.5.2"
-    "@stacks/network" "^6.5.2"
+    "@stacks/auth" "^6.11.0"
+    "@stacks/common" "^6.10.0"
+    "@stacks/encryption" "^6.11.0"
+    "@stacks/network" "^6.10.0"
     base64-js "^1.5.1"
     jsontokens "^4.0.1"
 
@@ -190,20 +221,32 @@
     c32check "^2.0.0"
     lodash.clonedeep "^4.5.0"
 
-"@stacks/wallet-sdk@6.5.2":
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/@stacks/wallet-sdk/-/wallet-sdk-6.5.2.tgz#3ce46850dd4772dcf6e20fe256f9ae794b0b518d"
-  integrity sha512-fXUgXCdfjYYY7tHA8Br8esPi4155QxjkZcFyMOstgdPJwBz0JHjg+SlCpsp+qjhVh+2t+fDhcP2GQLwdYk/bxA==
+"@stacks/transactions@^6.10.0", "@stacks/transactions@^6.11.0":
+  version "6.11.0"
+  resolved "https://registry.yarnpkg.com/@stacks/transactions/-/transactions-6.11.0.tgz#6b135cc77d6c60eeb2bfeef972df9da24caacb2a"
+  integrity sha512-+zIDqn9j4H/+o1ER8C9rFpig1fyrQcj2hVGNIrp+YbpPyja+cxv3fPk6kI/gePzwggzxRgUkIWhBc+mZAXuXyQ==
+  dependencies:
+    "@noble/hashes" "1.1.5"
+    "@noble/secp256k1" "1.7.1"
+    "@stacks/common" "^6.10.0"
+    "@stacks/network" "^6.10.0"
+    c32check "^2.0.0"
+    lodash.clonedeep "^4.5.0"
+
+"@stacks/wallet-sdk@6.10.0":
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/@stacks/wallet-sdk/-/wallet-sdk-6.10.0.tgz#da7571df3d553a071ebd2fcddab114a6e4a1150c"
+  integrity sha512-UAU36/ieNdw8vH/PcVfJH8HHtUWBXsycvDzT+GLRBagHCmfQOySa4ib/r2DyM3rxUd1MLBOPRCjvbKPlGrzlUg==
   dependencies:
     "@scure/bip32" "1.1.3"
     "@scure/bip39" "1.1.0"
-    "@stacks/auth" "^6.5.2"
-    "@stacks/common" "^6.5.2"
-    "@stacks/encryption" "^6.5.2"
-    "@stacks/network" "^6.5.2"
-    "@stacks/profile" "^6.5.2"
-    "@stacks/storage" "^6.5.2"
-    "@stacks/transactions" "^6.5.2"
+    "@stacks/auth" "^6.10.0"
+    "@stacks/common" "^6.10.0"
+    "@stacks/encryption" "^6.10.0"
+    "@stacks/network" "^6.10.0"
+    "@stacks/profile" "^6.10.0"
+    "@stacks/storage" "^6.10.0"
+    "@stacks/transactions" "^6.10.0"
     buffer "^6.0.3"
     c32check "^2.0.0"
     jsontokens "^4.0.1"
